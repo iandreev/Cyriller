@@ -17,7 +17,7 @@ namespace Cyriller
 
         public TextReader GetData(string FileName)
         {
-            Stream stream = typeof(CyrData).Assembly.GetManifestResourceStream("Cyriller.App_Data." + FileName);
+            Stream stream = typeof(CyrData).Assembly.GetManifestResourceStream("Cyriller.Core.App_Data." + FileName);
             GZipStream gzip = new GZipStream(stream, CompressionMode.Decompress);
             TextReader treader = new StreamReader(gzip);
 
