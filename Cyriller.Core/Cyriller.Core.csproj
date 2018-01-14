@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="App_Data\adjective-rules.gz" />
+    <None Remove="App_Data\adjectives.gz" />
+    <None Remove="App_Data\noun-rules.gz" />
+    <None Remove="App_Data\nouns.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="App_Data\adjective-rules.gz" />
+    <EmbeddedResource Include="App_Data\adjectives.gz" />
+    <EmbeddedResource Include="App_Data\noun-rules.gz" />
+    <EmbeddedResource Include="App_Data\nouns.gz" />
+  </ItemGroup>
+
+</Project>
